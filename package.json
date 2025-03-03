@@ -50,7 +50,7 @@
     "eslint-config-react-app": "^7.0.1",
     "webpack": "^5.98.0"
   },
-  "homepage": "https://github.com/Benoushkp/Her-Cart"
+  "homepage": "https://github.com/Benoushkp/Her-Cart",
   "vercel": {
     "rewrites": [
       {
@@ -60,4 +60,3 @@
     ]
   }
 }
-
