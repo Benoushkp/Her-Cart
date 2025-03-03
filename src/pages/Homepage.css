@@ -1,0 +1,72 @@
+.homepage{
+  width: 99vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease-in-out infinite alternate;
+}
+.hero {
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-size: cover;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .transparent-box {
+    background-color: rgba(255, 255, 255, 0.427);
+    border: 2px solid black;
+    padding: 10px;
+    height: 200px;
+  }
+  
+  .shop-now {
+    padding: 10px 20px;
+    width: 125px;
+    font-size: 18px;
+    background: #000000ba;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top: -45px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .shop-now:hover {
+    background: #5C3F7E;
+    transform: scale(1.05);
+  }
+  .view-details {
+    background: transparent !important;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .view-details button {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .view-details button:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+  }

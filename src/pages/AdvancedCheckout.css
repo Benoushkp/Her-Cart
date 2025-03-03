@@ -1,0 +1,161 @@
+/* Global Reset for Underlines */
+a, h1, h2, p, button {
+    text-decoration: none;
+  }
+  
+  /* Advanced Checkout Page - Full Width & Animated Background */
+  .advanced-checkout-page {
+    width: 99vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease-in-out infinite alternate;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Background Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* ShopNow Header Styling */
+  .shopnow-header {
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .shopnow-header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .shopnow-header p {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  
+  /* Glassmorphic Container for Checkout Form */
+  .checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    text-align: left;
+  }
+  
+  /* Checkout Form Layout */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Section Titles */
+  .shipping-section h2,
+  .payment-section h2,
+  .order-summary h2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  /* Input Fields */
+  .checkout-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.8);
+    font-size: 1rem;
+  }
+  
+  /* Payment Options */
+  .payment-options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .payment-options label {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  /* Order Summary */
+  .order-summary ul.order-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary ul.order-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    font-size: 1.1rem;
+  }
+  
+  /* Place Order Button */
+  .place-order-btn {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: 100%;
+  }
+  
+  .place-order-btn:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    transform: scale(1.02);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ffcccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .shopnow-header h1 {
+      font-size: 40px;
+      top: -40px;
+      position: relative;
+    }
+    .checkout-container {
+      margin: 20px 10px;
+      padding: 20px;
+    }
+    .shipping-section h2,
+    .payment-section h2,
+    .order-summary h2 {
+      font-size: 1.8rem;
+    }
+  }
+  

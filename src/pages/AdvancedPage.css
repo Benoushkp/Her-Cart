@@ -1,0 +1,210 @@
+/* Global Page Layout */
+.collection-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 99vw;
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease-in-out infinite alternate;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Background Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Container for Page Content */
+.collection-container {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15); /* Enhanced glass effect */
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.collection-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* ---------------- Services Section ---------------- */
+
+/* Grid for Cards (Services, Products, etc.) */
+.products-grid {
+  display: flex;
+  flex-wrap: nowrap; /* One row */
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto; /* Horizontal scroll if needed */
+  justify-content: center;
+}
+
+/* Card Styling for Services */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.25);
+  min-width: 300px;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Card Text */
+.product-card h3 {
+  font-size: 1.2rem;
+  margin: 10px;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin: 10px;
+  color: #666;
+}
+
+/* (Optional) If you later want a button style for Services cards */
+.product-card button {
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  background-color: #c9a66b;  /* Luxurious gold tone */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #b89258;
+  transform: scale(1.03);
+}
+
+/* ---------------- Testimonials Section ---------------- */
+
+/* Container for Testimonials */
+.testimonial-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 30px 20px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Testimonial Image (if used) */
+.testimonial-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* Testimonial Text */
+.testimonial-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #fff;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  font-style: italic;
+  color: #ddd;
+}
+
+/* ---------------- About Us Section ---------------- */
+
+/* About Us Content Styling */
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------- Contact Section ---------------- */
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Contact Form Button */
+.contact-form button {
+  padding: 12px 20px;
+  background: #000000ba;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-form button:hover {
+  background: #5C3F7E;
+  transform: scale(1.05);
+}

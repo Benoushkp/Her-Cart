@@ -1,0 +1,109 @@
+.login-page {
+  width: 100%;
+  min-height: 100vh;
+  background: url('../assets/images/Background.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.form-container {
+  background: rgba(96, 58, 142, 0.42);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(96, 58, 142, 0.6);
+  width: 320px;
+  text-align: center;
+  border: 1px solid rgba(96, 58, 142, 0.6);
+}
+
+input,
+button {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #603a8e;
+}
+
+button {
+  background: #603a8e;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: #472880;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(96, 58, 142, 0.9);
+}
+
+button:focus {
+  outline: 2px solid #472880;
+}
+
+h2 {
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  border-radius: 5px;
+  background: #603a8e;
+  animation: fadeIn 2s ease-in-out, colorChange 3s infinite alternate;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes colorChange {
+  0% { color: white; }
+  50% { color: rgb(0, 0, 0); }
+  100% { color: rgb(255, 255, 255); }
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  color: #472880;
+  transform: translateY(-2px);
+}
+
+a:focus {
+  outline: 2px solid #472880;
+}
+
+.error-message {
+  color: #ffcccc;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

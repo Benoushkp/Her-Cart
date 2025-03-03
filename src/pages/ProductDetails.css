@@ -1,0 +1,118 @@
+/* ProductDetails.css */
+
+/* Page Container with Animated Gradient Background */
+.product-details-page {
+  width: 99vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+  background-size: 300% 300%;
+  animation: gradientAnimation 6s ease-in-out infinite alternate;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Container for Product Details */
+.product-details-container {
+  display: flex;
+  gap: 40px;
+  background: rgba(9, 9, 9, 0.203);
+  border-radius: 15px;
+  padding:20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto 40px;
+}
+
+/* Product Image */
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.product-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Product Information */
+.product-info {
+  flex: 1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.product-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #5e2b97;
+  text-transform: uppercase;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.product-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #d76d77;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .product-details-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .product-info h1 {
+    font-size: 28px;
+  }
+  .product-price {
+    font-size: 18px;
+  }
+}

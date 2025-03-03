@@ -1,0 +1,116 @@
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #5e2b97, #8a3ab9, #d23f8e);
+  padding: 10px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar2 .logo {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out, colorChange 3s infinite alternate;
+}
+
+.navbar2 .logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: -30px;
+}
+
+.navbar2 ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar2 ul li {
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar2 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar2 ul li a:hover {
+  color: #000000;
+}
+
+/* Dropdown styles for the account toggle */
+.account-section {
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.account-section:hover {
+  color: #5C3F7E;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 150%;
+  right: -28px;
+  z-index: 1000;
+  background:#000000ba ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  list-style: none;
+  padding: 10px 20px;
+  margin: 0;
+  width: 125px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s, background 0.3s ease;
+}
+.dropdown-menu:hover {
+  background: #5C3F7E;
+  transform: scale(1.05);
+}
+
+.account-section:hover .dropdown-menu,
+.account-section.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu li:hover {
+  background: #000000;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes colorChange {
+  0% { color: white; }
+  50% { color: rgb(0, 0, 0); }
+  100% { color: rgb(255, 255, 255); }
+}

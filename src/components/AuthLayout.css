@@ -1,0 +1,11 @@
+.auth-layout {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }

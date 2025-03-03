@@ -1,0 +1,118 @@
+/* Checkout Page with Animated Gradient Background */
+  .checkout-page {
+    width: 99vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease-in-out infinite alternate;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  .checkout-header h1{
+    font-size: 48px;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Background Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  /* Checkout Container with Glassmorphism Effect */
+  .checkout-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1); /* glass effect */
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  /* Section Titles */
+  .shipping-section h2,
+  .payment-section h2,
+  .order-summary h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  /* Form Inputs Styling */
+  .checkout-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+  }
+  
+  /* Form Sections */
+  .shipping-section,
+  .payment-section,
+  .order-summary {
+    margin-bottom: 30px;
+  }
+  
+  /* Order Items List */
+  .order-items {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .order-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Place Order Button */
+  .place-order-btn {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+  
+  .place-order-btn:hover {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ffcccc;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .checkout-container {
+      margin: 20px 10px;
+      padding: 20px;
+    }
+    .shipping-section h2,
+    .payment-section h2,
+    .order-summary h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
